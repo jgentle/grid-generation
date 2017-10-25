@@ -1,0 +1,48 @@
+Need to be able to do the following programmatically:
+
+1) Take coordinates extents and grid subdivision scale (in m/km)
+2) Generate an empty grid from these values
+3) R magic happens in HPC to produce data for each cell in grid
+4) Write new data values back into shapefile
+5) Convert shapefile to geoJSON for web visualization
+
+Target test coordinates:
+
+-97.546649, 32.550058  to  -97.034774, 32.987978
+[OR]
+32.550058, -97.546649  to  32.987978, -97.034774
+
+
+Requires:
+
+Python
+GDAL
+R (?)
+
+
+Libraries:
+
+Python based: PyShp, Fiona (OGR API)
+
+https://code.google.com/archive/p/pyshp/
+https://github.com/GeospatialPython/pyshp
+https://github.com/Toblerity/Fiona
+
+
+References:
+
+https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html
+
+https://pcjericks.github.io/py-gdalogr-cookbook/vector_layers.html
+
+https://geo-how-to.org/How_to_make_a_grid-layer
+
+https://gis.stackexchange.com/questions/54119/creating-square-grid-polygon-shapefile-with-python
+
+https://gis.stackexchange.com/questions/52705/how-to-write-shapely-geometries-to-shapefiles
+
+https://gis.stackexchange.com/questions/154537/generating-grid-shapefile-in-r
+
+https://gis.stackexchange.com/questions/35593/using-pyshp-to-convert-csv-file-to-shp
+
+http://pygis.blogspot.co.uk/2012/10/pyshp-attribute-types-and-point-files.html
